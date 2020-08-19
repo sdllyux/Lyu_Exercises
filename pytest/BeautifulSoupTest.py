@@ -12,7 +12,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-r = requests.get('https://www.baidu.com')
+r = requests.get('https://www.baidu.com/')
 html = r.text  # 爬虫得到网站的html内容
 soup = BeautifulSoup(html, 'html.parser')  # 标准解析库
 
