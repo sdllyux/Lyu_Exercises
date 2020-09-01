@@ -1,0 +1,265 @@
+    /*shortcut-nav部分start*/
+.shortcut-nav {
+    height: 44px;
+    border-bottom: 2px solid #B1191A;
+}
+.shortcut-nav-menu {     /*撑开和撑破是两回事：撑开说明盒子变成那么大，撑破盒子还是那么大，子盒子很大。子盒子shortcut-nav-menu-one把父亲撑破了*/
+    width: 210px;
+    height: 44px;        /*浮动的盒子相互影响，不过是否在同一个盒子中*/
+    float: left;
+    position: relative;
+    z-index: 1;       /*通过z-index属性将层级放到最高*/
+}
+.shortcut-nav-menu-all a {
+    display: block;
+    width: 190px;
+    height: 44px;
+    color: white;
+    padding: 0 10px;
+    background-color: #B1191A;
+    font: 400 15px/44px "microsoft yahei";
+}
+.shortcut-nav-menu-one {
+    height: 465px;
+    margin-top: 2px;
+    background-color: #C81623;
+    border-left: 1px solid #B1191A;
+    border-bottom: 1px solid #B1191A;
+    /*border-left: 1px solid #000;*/
+    /*border-bottom: 1px solid #000;*/
+}
+.shortcut-nav-items {
+    width: 730px;
+    height: 44px;
+    float: left;
+}
+.shortcut-nav-items li {
+    float: left;
+}
+.shortcut-nav-items a {
+    display: inline-block;
+    height: 44px;
+    padding: 0 20px;
+    color: #333;
+    font: 400 16px/44px "microsoft yahei";
+}
+.shortcut-nav-items a:hover {
+    color: #C81623;
+}
+.shortcut-nav-img {
+    width: 120px;
+    height: 44px;
+    float: right;
+    margin-top: -10px;
+    margin-right: 50px;
+    /*position: relative;*/
+    /*left: -50px;*/
+    /*top: -10px;*/
+}
+/*具体的商品分类start*/
+.shortcut-nav-menu-one ul {
+    font: 400 14px/31px "microsoft yahei";   /*字体属性具有继承性，让儿子 a 具有此继承性*/
+}
+.shortcut-nav-menu-one li {
+    padding-left: 10px;
+    position: relative;
+}
+
+.shortcut-nav-menu-one a{
+    color: #fff;
+}
+
+.shortcut-nav-menu-one i {
+    right: 10px;
+    position: absolute;
+}
+
+.shortcut-nav-menu-one li:hover {
+    background-color: #fff;
+}
+
+.shortcut-nav-menu-one li:hover a,span,i{
+    color: #C81623;
+}
+/*具体的商品分类end*/
+/*shortcut-nav部分end*/
+
+.main-slider {
+    float: left;
+    margin: 12px 0 0 220px;
+    width: 730px;
+    height: 454px;
+    position: relative;
+}
+
+.main-slider ul {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -66px;
+}
+
+.main-slider ul li {
+    float: left;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    background-color: #3E3E3E;
+    border-radius: 50%;   /*圆角矩形*/
+    line-height: 18px;
+    text-align: center;  /*让 li 里面的文本水平方向居中*/
+    margin: 0 2px;
+    cursor: pointer;   /*鼠标悬停时变成小手*/
+}
+
+.arrow-left {  /* 轮播图左侧的箭头*/
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    left: 0px;
+    width: 28px;
+    height: 62px;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    font: 400 22px/62px "sumsun";
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.main-slider .arrow-left:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.arrow-right {  /*轮播图右侧的箭头*/
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    right: 0px;
+    width: 28px;
+    height: 62px;
+    background-color: pink;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    font: 400 22px/62px "sumsun";
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.main-slider .arrow-right:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.main-news-top-faster {
+    height: 163px;
+    border-bottom: 1px dashed #E4E4E4;    /*虚线*/
+}
+
+
+.main-news-top-faster-title {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px dotted #E8E8E8;   /*点线*/
+    padding: 0 15px;
+
+}
+
+.main-news-top-faster-title h2{
+    float: left;
+    font: 400 16px/32px "microsoft yahei";
+}
+
+.main-news-top-faster-title a {
+    float: right;
+}
+
+.main-news-top-faster-content {
+    padding: 5px 0 0 15px;
+
+}
+
+.main-news-top-faster-content li {
+    line-height: 24px;
+}
+
+.main-news-top-faster-content span {
+    font-weight: 700;
+    margin-right: 5px;
+    color: #666;
+}
+
+.main-news-top-money ul {
+    width: 250px;
+}
+
+/*充话费部分start*/
+.main-news-top-money {
+    overflow: hidden;   /*将多余的部分切掉*/
+}
+
+.main-news-top-money ul {
+    width: 260px;   /*让宽度略大于整体的宽度250px*/
+}
+
+.main-news-top-money li {
+    width: 62px;
+    height: 70px;
+    border: 1px solid #E8E8E8;
+    float: left;
+    border-top: 0;  /* 将每个单元格的上边框去掉，因为跟单元格的下边框重合了。*/
+    margin-top: -1px;  /* 整体向上移动一个单位，因为边框重合了*/
+    margin-left: -1px ;/* 整体向左移动一个单位，因为边框重合了*/
+}
+
+.main-news-top-money li a {
+    display: block;
+    width: 62px;
+    height: 30px;
+    padding-top: 40px;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+}
+
+.main-news-top-money li a i {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    background: url("../images/newfly.png") right top;
+}
+
+.main-news-top-money .main-news-top-money-icon2 {
+    background: url("../images/newfly.png") right -25px;
+}
+/*充话费部分end*/
+
+/*今日推荐start*/
+.today {
+    padding: 10px 0 20px;
+}
+
+.today-left a{
+    display: block;
+    width: 210px;
+    height: 150px;
+    background: url("../images/today.jpg");
+}
+
+.today-right {
+    float: right;
+    width: 1000px;
+    overflow: hidden;  /*隐藏掉右侧超出的几个像素*/
+    position: relative;
+}
+
+.today-right ul {
+    width: 410%;   /*这一点很有技巧*/
+}
+
+.today-right li{
+    float: left;
+    margin-right: 1px;
+
+}
+/*今日推荐end*/
